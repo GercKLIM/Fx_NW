@@ -1,0 +1,355 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14574,        345]
+NotebookOptionsPosition[     13250,        316]
+NotebookOutlinePosition[     13657,        332]
+CellTagsIndexPosition[     13614,        329]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:0421\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0434\:0430\:043d\
+\:043d\:044b\:0445 \:0434\:043b\:044f \:043e\:0431\:0443\:0447\:0435\:043d\
+\:0438\:044f \:043d\:0435\:0439\:0440\:043e\:043d\:043d\:043e\:0439 \:0441\
+\:0435\:0442\:0438", "Title",
+ CellChangeTimes->{{3.9082569933176813`*^9, 3.9082570176559577`*^9}, {
+  3.9082570685138273`*^9, 
+  3.9082570747806206`*^9}},ExpressionUUID->"0904b4c5-3ed0-479c-bf28-\
+15ac1ba08f29"],
+
+Cell["\<\
+1) \:0413\:0440\:0430\:0444\:0438\:043a \:0444\:0443\:043d\:043a\:0446\:0438\
+\:0438
+2) \:0433\:0440\:0430\:0444\:0438\:043a \:0444\:0443\:043d\:043a\:0446\:0438\
+\:0438 \:0441 \:043a\:043e\:043d\:0442\:0440\:043e\:043b\:0438\:0440\:0443\
+\:0435\:043c\:044b\:043c \:0448\:0443\:043c\:043e\:043c\
+\>", "Subtitle",
+ CellChangeTimes->{{3.908257020852997*^9, 
+  3.9082570567429466`*^9}},ExpressionUUID->"35e6ef5f-c4ca-4de3-af62-\
+a6c9245c64e3"],
+
+Cell["\:0410\:0432\:0442\:043e\:0440: \:041a\:043b\:0438\:043c\:043e\:0432 \
+\:041e\:043b\:0435\:0433, \:0441\:0442\:0443\:0434\:0435\:043d\:0442 \:0424\
+\:041d2-51\:0411", "Subsubtitle",
+ CellChangeTimes->{{3.9082570605905037`*^9, 3.9082570969541597`*^9}, {
+  3.908257334364439*^9, 
+  3.908257335921838*^9}},ExpressionUUID->"851c68fc-38e2-4b6f-a2e8-\
+4734cd5bcb1b"],
+
+Cell[CellGroupData[{
+
+Cell["\:041a\:043e\:0434  \:043f\:0440\:043e\:0433\:0440\:0430\:043c\:043c\
+\:044b", "Subsection",
+ CellChangeTimes->{{3.908257142801196*^9, 3.9082571496275163`*^9}, 
+   3.9082572423771553`*^9},ExpressionUUID->"ca1c6e33-0717-40d9-b4e2-\
+f17d25b5212d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "0"}], ",", 
+   RowBox[{"i", " ", "<", " ", "100"}], ",", 
+   RowBox[{"i", "++"}], ",", " ", "\n", "\n", "\t", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "\:0417\:0430\:0434\:0430\:0432\:0430\:0435\:043c\:0430\:044f", " ", 
+     "\:0444\:0443\:043d\:043a\:0446\:0438\:044f"}], " ", "*)"}], 
+   "\[IndentingNewLine]", "\t", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "[", "x_", "]"}], "=", " ", 
+     RowBox[{"i", " ", "x"}]}], " ", ";", "\n", "\t", "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0421\:043e\:0437\:0434\:0430\:043d\:0438\:0435", " ", 
+      "\:0447\:0438\:0441\:0442\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], "\n", "\t",
+     "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0427\:0438\:0441\:0442\:044b\:0439", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a"}], " ", "*)"}], 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"CleanGraphic", " ", "=", " ", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"f", "[", "x", "]"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", " ", 
+         RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", " ", 
+       RowBox[{"AspectRatio", " ", "->", " ", "1"}], ",", " ", 
+       RowBox[{"Axes", " ", "->", " ", "True"}], ",", " ", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", " ", "10"}], "}"}]}], "}"}]}], ",", 
+       "\n", "\t", 
+       RowBox[{"Frame", "->", "True"}], ",", 
+       RowBox[{"FrameTicks", "->", " ", "None"}], ",", " ", 
+       RowBox[{"AxesOrigin", " ", "->", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}]}], ",", " ", 
+       RowBox[{"PlotPoints", " ", "->", " ", "1000"}], ",", " ", 
+       RowBox[{"PlotStyle", "->", "Black"}]}], "]"}]}], ";", "\n", "\t", "\n",
+     "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:041f\:0443\:0442\:044c", " ", 
+      "\:0441\:043e\:0445\:0440\:0430\:043d\:0435\:043d\:0438\:044f", " ", 
+      "\:0447\:0438\:0441\:0442\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], " ", "\n", 
+    "\t", 
+    RowBox[{"TrainFilepath", " ", "=", " ", 
+     RowBox[{
+     "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\:0443\
+\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\:0430 5\
+\:0441\:0435\:043c\\\\code\\\\input\\\\data_train\\\\\>\"", " ", "<>", " ", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.png\>\""}]}], ";", 
+    "\n", "\t", "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0421\:043e\:0445\:0440\:0430\:043d\:0435\:043d\:0438\:0435", " ", 
+      "\:0447\:0438\:0441\:0442\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], "\n", "\t", 
+    RowBox[{"Export", "[", 
+     RowBox[{"TrainFilepath", ",", " ", "CleanGraphic", ",", " ", 
+      RowBox[{"ImageSize", " ", "->", " ", 
+       RowBox[{"{", 
+        RowBox[{"1000", ",", " ", "1000"}], "}"}]}]}], "]"}], ";", "\n", "\t",
+     "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0421\:043e\:0437\:0434\:0430\:043d\:0438\:0435", " ", 
+      "\:0448\:0443\:043c\:043d\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], "\n", "\t",
+     "\n", "\t", 
+    RowBox[{"numPoints", " ", "=", " ", "100"}], ";", 
+    "                                  ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e", " ", 
+      "\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445", " ", 
+      "\:0442\:043e\:0447\:0435\:043a"}], " ", "*)"}], "\n", "\t", 
+    RowBox[{"xCoords", " ", "=", " ", 
+     RowBox[{"RandomReal", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", " ", 
+         RowBox[{"2", " ", "Pi"}]}], "}"}], ",", " ", "numPoints"}], "]"}]}], 
+    ";", "       ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{
+      "\:0421\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0435", " ", "x"}], 
+      "-", "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:044b"}], 
+     "     ", "*)"}], "\n", "\t", 
+    RowBox[{"yCoords", " ", "=", " ", 
+     RowBox[{"RandomReal", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", "numPoints"}], 
+      "]"}]}], ";", "         ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{
+      "\:0421\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0435", " ", "y"}], 
+      "-", "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442\:044b"}], 
+     "     ", "*)"}], "\n", "\t", 
+    RowBox[{"points", " ", "=", " ", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"xCoords", ",", " ", "yCoords"}], "}"}], "]"}]}], ";", 
+    "           ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:041e\:0431\:044a\:0435\:0434\:0438\:043d\:0435\:043d\:0438\:0435", 
+      " ", "\:043a\:043e\:043e\:0440\:0434\:0438\:043d\:0430\:0442"}], 
+     "      ", "*)"}], "\n", "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0428\:0443\:043c\:043d\:044b\:0439", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a"}], " ", "*)"}], " ", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"NoizeGraphic", "=", " ", 
+     RowBox[{"Show", "[", 
+      RowBox[{"plot", ",", " ", 
+       RowBox[{"ListPlot", "[", 
+        RowBox[{"points", ",", " ", 
+         RowBox[{"PlotStyle", " ", "->", " ", "Black"}], ",", " ", 
+         RowBox[{"PlotMarkers", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{"\"\<\[Bullet]\>\"", ",", " ", "20"}], "}"}]}]}], "]"}]}], 
+      "]"}]}], ";", "\n", "\t", "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:041f\:0443\:0442\:044c", " ", 
+      "\:0441\:043e\:0445\:0440\:0430\:043d\:0435\:043d\:0438\:044f", " ", 
+      "\:0448\:0443\:043c\:043d\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], " ", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"TestFilepath", " ", "=", " ", 
+     RowBox[{
+     "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\:0443\
+\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\:0430 5\
+\:0441\:0435\:043c\\\\code\\\\input\\\\data_test\\\\\>\"", " ", "<>", " ", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.png\>\""}]}], ";", 
+    "\n", "\t", "\n", "\t", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "\:0421\:043e\:0445\:0440\:0430\:043d\:0435\:043d\:0438\:0435", " ", 
+      "\:0448\:0443\:043c\:043d\:043e\:0433\:043e", " ", 
+      "\:0433\:0440\:0430\:0444\:0438\:043a\:0430"}], " ", "*)"}], 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"Export", "[", 
+     RowBox[{"TestFilepath", ",", " ", "NoizeGraphic", ",", " ", 
+      RowBox[{"ImageSize", " ", "->", " ", 
+       RowBox[{"{", 
+        RowBox[{"1000", ",", " ", "1000"}], "}"}]}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Code",
+ CellChangeTimes->{{3.9082571617183056`*^9, 3.9082571623599834`*^9}, {
+  3.9082572059359035`*^9, 3.908257323463335*^9}, {3.9082573676988697`*^9, 
+  3.908257820017175*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"65d11768-b039-4091-88bd-c86ec014de12"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show", "gcomb", 
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", RowBox[{\\\"plot\\\", \\\",\\\", \
+GraphicsBox[List[List[], List[List[TagBox[List[Skeleton[2]], \
+Function[Annotation[Slot[1], \\\"Charting`Private`Tag#1\\\"]]]]], \
+List[List[], List[]]], List[Rule[DisplayFunction, Identity], \
+Rule[DisplayFunction, Identity], Rule[DisplayFunction, Identity], \
+Rule[AspectRatio, NCache[Power[GoldenRatio, -1], 0.6180339887498948`]], \
+Rule[Axes, List[True, True]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[0, 0]], RuleDelayed[DisplayFunction, Identity], \
+Rule[Frame, List[List[False, False], List[False, False]]], Rule[FrameLabel, \
+List[List[None, None], List[None, None]]], Skeleton[8]]]}], \
+\\\"]\\\"}]\\).\"", 2, 1, 1, 33361858187515967264, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.90825782433013*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e3ddd80c-6ad4-42f2-96ed-f85ebaecbdea"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show", "gcomb", 
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", RowBox[{\\\"plot\\\", \\\",\\\", \
+GraphicsBox[List[List[], List[List[TagBox[List[Skeleton[2]], \
+Function[Annotation[Slot[1], \\\"Charting`Private`Tag#1\\\"]]]]], \
+List[List[], List[]]], List[Rule[DisplayFunction, Identity], \
+Rule[DisplayFunction, Identity], Rule[DisplayFunction, Identity], \
+Rule[AspectRatio, NCache[Power[GoldenRatio, -1], 0.6180339887498948`]], \
+Rule[Axes, List[True, True]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[0, 0]], RuleDelayed[DisplayFunction, Identity], \
+Rule[Frame, List[List[False, False], List[False, False]]], Rule[FrameLabel, \
+List[List[None, None], List[None, None]]], Skeleton[8]]]}], \
+\\\"]\\\"}]\\).\"", 2, 1, 2, 33361858187515967264, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.908257824821332*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"868e5420-c123-40a9-b1a7-38d94a29825a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show", "gcomb", 
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", RowBox[{\\\"plot\\\", \\\",\\\", \
+GraphicsBox[List[List[], List[List[TagBox[List[Skeleton[2]], \
+Function[Annotation[Slot[1], \\\"Charting`Private`Tag#1\\\"]]]]], \
+List[List[], List[]]], List[Rule[DisplayFunction, Identity], \
+Rule[DisplayFunction, Identity], Rule[DisplayFunction, Identity], \
+Rule[AspectRatio, NCache[Power[GoldenRatio, -1], 0.6180339887498948`]], \
+Rule[Axes, List[True, True]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[0, 0]], RuleDelayed[DisplayFunction, Identity], \
+Rule[Frame, List[List[False, False], List[False, False]]], Rule[FrameLabel, \
+List[List[None, None], List[None, None]]], Skeleton[8]]]}], \
+\\\"]\\\"}]\\).\"", 2, 1, 3, 33361858187515967264, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.908257825249956*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"4ed6b69c-1c44-4b17-822b-08ac7c6315de"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Show\\\", \\\"::\\\", \
+\\\"gcomb\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 1, 4, 33361858187515967264, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.908257825286709*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"a638caf0-90f7-43ad-83b5-62ad650b9674"]
+}, Open  ]],
+
+Cell["", "Text",
+ CellChangeTimes->{
+  3.9082571633150606`*^9},ExpressionUUID->"8a4a6bfc-f46e-41d9-907e-\
+d4b615b08fd8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1440, 777.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"2c30319b-6f68-476a-8378-83ca80abfd63"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 439, 7, 98, "Title",ExpressionUUID->"0904b4c5-3ed0-479c-bf28-15ac1ba08f29"],
+Cell[1022, 31, 450, 9, 85, "Subtitle",ExpressionUUID->"35e6ef5f-c4ca-4de3-af62-a6c9245c64e3"],
+Cell[1475, 42, 366, 6, 31, "Subsubtitle",ExpressionUUID->"851c68fc-38e2-4b6f-a2e8-4734cd5bcb1b"],
+Cell[CellGroupData[{
+Cell[1866, 52, 251, 4, 54, "Subsection",ExpressionUUID->"ca1c6e33-0717-40d9-b4e2-f17d25b5212d"],
+Cell[CellGroupData[{
+Cell[2142, 60, 7373, 171, 613, "Code",ExpressionUUID->"65d11768-b039-4091-88bd-c86ec014de12"],
+Cell[9518, 233, 1037, 19, 67, "Message",ExpressionUUID->"e3ddd80c-6ad4-42f2-96ed-f85ebaecbdea"],
+Cell[10558, 254, 1038, 19, 67, "Message",ExpressionUUID->"868e5420-c123-40a9-b1a7-38d94a29825a"],
+Cell[11599, 275, 1038, 19, 67, "Message",ExpressionUUID->"4ed6b69c-1c44-4b17-822b-08ac7c6315de"],
+Cell[12640, 296, 447, 10, 28, "Message",ExpressionUUID->"a638caf0-90f7-43ad-83b5-62ad650b9674"]
+}, Open  ]],
+Cell[13102, 309, 120, 3, 38, "Text",ExpressionUUID->"8a4a6bfc-f46e-41d9-907e-d4b615b08fd8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
